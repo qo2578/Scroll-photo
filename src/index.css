@@ -1,13 +1,39 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  height: 100vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body{
+  background: url('/public/bg.jpg') center/cover no-repeat; 
+
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.content{
+  position: absolute;
+  display: grid;
+  align-items: center;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+h1{
+  font-size: 5em;
+  margin-left: 5%;
+  font-weight: lighter;
+  color: transparent; /* Делаем текст прозрачным */
+  -webkit-text-stroke: 1px white; /* Создаем обводку текста белым цветом */
+  mix-blend-mode: difference; /* Применяем режим смешивания difference */
 }
